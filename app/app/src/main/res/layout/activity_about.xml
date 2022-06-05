@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="133dp"
+        android:layout_height="146dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        app:srcCompat="@drawable/muscle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="315dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/opensans"
+
+        android:lines="1"
+        android:text="Epilepsja"
+        android:textColor="#105488" />
+
+    <TextView
+        android:layout_width="402dp"
+        android:layout_height="315dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/opensans"
+        android:lines="40"
+        android:text="\n\nEpilepsja to zespół zaburzeń,które charakteryzują się \nwystępowaniem nawracających gwałtownych napadów (ataków) padaczkowych. \nktóre występują samoistnie i nieprzewidywalnie.\nW pewnych przypadkach istnieją jednak czynniki prowokujące wystąpienie ataku są to m.in. migające światła, stres, alkohol, miejscowa stymulacja\n\n Padaczka jest nieuleczalna i pomimo wielu prób,\n nie opracowano do tej pory prawidłowo działającej aplikacji służącej wykrywaniu przedwcześnie ataków. Jednak dzięki powierzchniowemu EMG można nie tylko rejestrować sygnały u osób zmagających się z tym zaburzeniem, rozróżniać napady padaczkowe, ale też zapewnić szybką pomoc, która może być dostarczona osobie bez stałej opieki."
+        android:textColor="#105488"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:fontFamily="@font/opensans"
+
+        android:text="Z tego powodu powstała właśnie ta aplikacja."
+        android:textColor="#105488" />
+
+
+
+</RelativeLayout>
+

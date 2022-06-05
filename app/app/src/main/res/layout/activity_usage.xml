@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="402dp"
+        android:layout_height="315dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/opensans"
+        android:lines="40"
+        android:text="Wyszukaj urządzenie pacjenta i wciśnij Połącz.\n"
+        android:textColor="#105488"
+        android:textSize="14sp" />
+    <ImageView
+
+        android:layout_width="133dp"
+        android:layout_height="146dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="159dp"
+        app:srcCompat="@drawable/przyciski" />
+
+    <TextView
+        android:layout_width="402dp"
+        android:layout_height="135dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/opensans"
+        android:lines="40"
+        android:text="Aplikacja przekieruje Cię do terminalu gdzie będziesz mógł sprawdzić stan pacjenta w danej chwili.\nW razie ataku padaczkowego udziel pomocy.\nW razie długotrwałego ataku skontaktuj się z pogotowiem przyciskiem Zadzwoń po pomoc.  "
+        android:textColor="#105488"
+        android:textSize="14sp" />
+    <ImageView
+
+        android:layout_width="133dp"
+        android:layout_height="146dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:layout_marginBottom="40dp"
+        app:srcCompat="@drawable/call" />
+
+
+
+</RelativeLayout>

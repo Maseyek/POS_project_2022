@@ -14,45 +14,32 @@
         android:id="@+id/imageView"
         android:layout_width="133dp"
         android:layout_height="146dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="50dp"
         app:srcCompat="@drawable/muscle" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="315dp"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="100dp"
-        android:fontFamily="@font/opensans"
-
-        android:lines="1"
-        android:text="Epilepsja"
-        android:textColor="#105488" />
 
     <TextView
-        android:layout_width="402dp"
-        android:layout_height="315dp"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="20dp"
+        android:layout_width="367dp"
+        android:layout_height="186dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
         android:layout_marginTop="100dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="248dp"
         android:fontFamily="@font/opensans"
         android:lines="40"
-        android:text="\n\nEpilepsja to zespół zaburzeń,które charakteryzują się \nwystępowaniem nawracających gwałtownych napadów (ataków) padaczkowych. \nktóre występują samoistnie i nieprzewidywalnie.\nW pewnych przypadkach istnieją jednak czynniki prowokujące wystąpienie ataku są to m.in. migające światła, stres, alkohol, miejscowa stymulacja\n\n Padaczka jest nieuleczalna i pomimo wielu prób,\n nie opracowano do tej pory prawidłowo działającej aplikacji służącej wykrywaniu przedwcześnie ataków. Jednak dzięki powierzchniowemu EMG można nie tylko rejestrować sygnały u osób zmagających się z tym zaburzeniem, rozróżniać napady padaczkowe, ale też zapewnić szybką pomoc, która może być dostarczona osobie bez stałej opieki."
+        android:text="System składający się z czujnika ultrasonicznego, modułu bluetooth oraz aplikacji mobilnej. Czujnik przeznaczony jest do użytku w przejściach o szerokości maksymalnej do 1m. Wykrycie obiektu przez czujnik skutkuje wysłaniem informacji do aplikacji mobilnej w celu zaalarmowania użytkownika. Ze względu na wykorzystanie połączenia Bluetooth zasięg jest odpowiednio ograniczony. \nCzujnik przesyła dwa typy komunikatów: \n1) 'alarm' - wykryto naruszenie czujnika \n2) 'bezpieczny' - czujnik nienaruszony, sprawny"
         android:textColor="#105488"
         android:textSize="12sp" />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="450dp"
-        android:fontFamily="@font/opensans"
-
-        android:text="Z tego powodu powstała właśnie ta aplikacja."
-        android:textColor="#105488" />
-
 
 
 </RelativeLayout>

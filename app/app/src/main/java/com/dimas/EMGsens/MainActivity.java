@@ -56,14 +56,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        call = (Button) findViewById(R.id.call);
+//        call = (Button) findViewById(R.id.call);
         usage = (Button) findViewById(R.id.usage);
         search = (Button) findViewById(R.id.search);
         connect = (Button) findViewById(R.id.connect);
         about = (Button) findViewById(R.id.about);
         listView = (ListView) findViewById(R.id.listview);
 
-        call.setOnClickListener(new View.OnClickListener(){
+        /*call.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(Intent.ACTION_DIAL);
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
 
             }
-        });
+        });*/
         about.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View v){

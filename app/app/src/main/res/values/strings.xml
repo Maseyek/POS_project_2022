@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">EMGsens</string>
-    <string name="hyperlink">Dowiedz się więcej o epilepsji na <a href="https://epilepsja.eu">epilepsja.eu</a></string>
+    <string name="app_name">Ultrasoniczny system bezpieczenstwa</string>
+    <!--<string name="hyperlink">Dowiedz się więcej o epilepsji na <a href="https://epilepsja.eu">epilepsja.eu</a></string>-->
 </resources>

@@ -108,9 +108,9 @@ public class MonitoringScreen extends AppCompatActivity {
                         for (i = 0; i < buffer.length && buffer[i] != 0; i++) {
                         }
                         String strInput = new String(buffer, 0, i);
-                        if (strInput != "alarm") {
+                       /* if (strInput != "alarm") {
                             strInput = "alarm";
-                        }
+                        }*/
                         final String output = strInput;
 
                         String currentTime = new SimpleDateFormat("HH:mm:ss:SS", Locale.getDefault()).format(new Date());

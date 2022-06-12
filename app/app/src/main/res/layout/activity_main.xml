@@ -73,19 +73,6 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="80dp"></ListView>
 
-    <Button
-        android:id="@+id/call"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="40dp"
-        android:background="#FFC107"
-        android:text="Zadzwoń po pomoc"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        app:backgroundTint="#FFC107" />
-
 
 </LinearLayout>
 

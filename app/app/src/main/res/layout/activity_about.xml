@@ -10,31 +10,20 @@
     tools:context=".MainActivity">
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="133dp"
-        android:layout_height="146dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="50dp"
-        app:srcCompat="@drawable/muscle" />
-
-
     <TextView
-        android:layout_width="367dp"
-        android:layout_height="186dp"
+        android:layout_width="wrap_content"
+        android:layout_height="423dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="23dp"
-        android:layout_marginLeft="23dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="21dp"
         android:layout_marginRight="21dp"
-        android:layout_marginBottom="248dp"
+        android:layout_marginBottom="208dp"
         android:fontFamily="@font/opensans"
         android:lines="40"
         android:text="System składający się z czujnika ultrasonicznego, modułu bluetooth oraz aplikacji mobilnej. Czujnik przeznaczony jest do użytku w przejściach o szerokości maksymalnej do 1m. Wykrycie obiektu przez czujnik skutkuje wysłaniem informacji do aplikacji mobilnej w celu zaalarmowania użytkownika. Ze względu na wykorzystanie połączenia Bluetooth zasięg jest odpowiednio ograniczony. \nCzujnik przesyła dwa typy komunikatów: \n1) 'alarm' - wykryto naruszenie czujnika \n2) 'bezpieczny' - czujnik nienaruszony, sprawny"

@@ -2,6 +2,7 @@ package com.dimas.EMGsens;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -13,6 +14,7 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
@@ -23,6 +25,8 @@ import android.widget.CheckBox;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MonitoringScreen extends AppCompatActivity {
@@ -93,6 +97,7 @@ public class MonitoringScreen extends AppCompatActivity {
             return t.isAlive();
         }
 
+        @RequiresApi(api = Build.VERSION_CODES.KITKAT)
         @Override
         public void run() {
             InputStream inputStream;
@@ -105,15 +110,16 @@ public class MonitoringScreen extends AppCompatActivity {
                         inputStream.read(buffer);
                         int i = 0;
 
-                        for (i = 0; i < buffer.length && buffer[i] != 0; i++) {
-                        }
-                        String strInput = new String(buffer, 0, i);
-                       /* if (strInput != "alarm") {
-                            strInput = "alarm";
+                        /*for (i = 0; i < buffer.length && buffer[i] != 0; i++) {
                         }*/
+                        String strInput = new String(buffer, StandardCharsets.UTF_8);
+                        if (strInput.startsWith("a")) {
+                            strInput = "alarm";
+                        } else if (strInput.startsWith("b"))
+                            strInput = "bezpieczny";
                         final String output = strInput;
 
-                        String currentTime = new SimpleDateFormat("HH:mm:ss:SS", Locale.getDefault()).format(new Date());
+                        String currentTime = new SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(new Date());
 
 
                         if (chkReceiveText.isChecked()) {
